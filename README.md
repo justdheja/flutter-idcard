@@ -2,4 +2,4 @@
 
 Flutter is so awesome! :fire:.
 
-Thanks to [Flutter](www.flutter.dev)
+Thanks to [Flutter](https://flutter.dev)
