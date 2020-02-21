@@ -1,6 +1,6 @@
-# idcard
+# flutter-idcard
 
-A new Flutter project.
+Flutter is so awesome! :fire:.
 
 ## Getting Started
 
