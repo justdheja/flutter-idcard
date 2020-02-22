@@ -28,15 +28,6 @@ class _IdCardState extends State<IdCard> {
         backgroundColor: Colors.grey[350],
         elevation: 0.0,
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          setState(() {
-            age++;
-          });
-        },
-        child: Icon(Icons.add),
-        backgroundColor: Colors.red[900],
-      ),
       body: Padding(
         padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
         child: Column(
@@ -121,6 +112,41 @@ class _IdCardState extends State<IdCard> {
                     letterSpacing: 2.0
                   ),
                 )
+              ]
+            ),
+            SizedBox(height: 30.0),
+            Row(
+              children: <Widget>[
+                
+                RaisedButton(
+                  onPressed: () {
+                    setState(() {
+                      age++;
+                    });
+                  },
+                  shape: RoundedRectangleBorder(
+                    borderRadius: new BorderRadius.circular(30.0)
+                  ),
+                  child: Icon(
+                    Icons.add,
+                    color: Colors.red[900]
+                  ),
+                ),
+                SizedBox(width: 10.0),
+                RaisedButton(
+                  onPressed: () {
+                    setState(() {
+                      age--;
+                    });
+                  },
+                  shape: RoundedRectangleBorder(
+                    borderRadius: new BorderRadius.circular(30.0) 
+                  ),
+                  child: Icon(
+                    Icons.remove,
+                    color: Colors.red[900],
+                  ),
+                ),
               ]
             ),
           ],
